@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
     --black: #000;
@@ -28,7 +27,6 @@ a {
 .containers {
     display: flex;
     justify-content: center;
-    /* margin-inline: auto; */
     height: 90vh;
     flex: 1;
     overflow: hidden;
@@ -37,7 +35,7 @@ a {
 .sidebars {
     flex: 0.25;
     display: flex;
-    height: 90vh;
+    height: 87vh;
     flex-direction: column;
     background-color: var(--black);
 }
@@ -46,7 +44,6 @@ a {
     position: relative;
     height: 13vh;
     width: 100%;
-    /* width: 1280px; */
     position: fixed;
     bottom: 0;
     background-color: var(--light-gray);
@@ -55,7 +52,6 @@ a {
 .playbar-foot {
     height: 3vh;
     width: 100%;
-    /* width: 1280px; */
     position: fixed;
     bottom: 0;
     background-color: #1ED760;
@@ -100,7 +96,10 @@ a {
 
 .main-body {
     overflow-y: auto;
+}
 
+::-webkit-scrollbar{
+    display: none;
 }
 
 .trgl {
