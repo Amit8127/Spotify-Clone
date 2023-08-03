@@ -47,6 +47,7 @@ a {
     position: fixed;
     bottom: 0;
     background-color: var(--light-gray);
+    z-index: 5;
 }
 
 .playbar-foot {
@@ -76,6 +77,12 @@ a {
     height: 100%;
 }
 
+.icon {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
 .icon:hover {
     background-color: rgb(26, 26, 26);
     border-radius: 5px;
@@ -243,12 +250,20 @@ a {
     display: flex;
     border-radius: 4px;
     background: #303030;
+    transition: all 1s ease;
 }
 
 .main-card1-1 {
     width: 25%;
     border-radius: 4px 0px 0px 4px;
     background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%);
+    
+}
+
+.main-card1:hover {
+    transform: scale(1.1, 1.1);
+    background-color: gray;
+    cursor: pointer;
 }
 
 .cards {
@@ -269,8 +284,15 @@ a {
     height: 250px;
     width: 200px;
     background-color: var(--light-gray);
+    transition: all 1s ease;
 }
 
+.card2:hover {
+    transform: scale(1.1, 1.1);
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
 .card2>img {
     width: 163px;
     margin-bottom: 20px;

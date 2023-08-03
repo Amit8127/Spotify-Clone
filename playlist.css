@@ -43,6 +43,7 @@ body {
     position: fixed;
     bottom: 0;
     background-color: var(--light-gray);
+    z-index: 5;
 }
 
 .main {
@@ -230,6 +231,7 @@ body {
 .itmes {
     margin: 20px
 }
+
 .tbl-hd {
     display: flex;
     color: white;
@@ -259,12 +261,13 @@ body {
 .list-items {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
     overflow-y: auto;
     gap: 10px;
-    
+
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -283,11 +286,14 @@ body {
     padding-inline: 15px;
     font-size: 12px;
     font-weight: 400;
+    transition: all 1s ease;
 }
 
 .list-item:hover {
     background-color: rgb(26, 26, 26);
     border-radius: 5px;
+    transform: translate(0px, -10px);
+    z-index: 4;
     cursor: pointer;
 }
 
