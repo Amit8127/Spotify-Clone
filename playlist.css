@@ -46,6 +46,16 @@ body {
     z-index: 5;
 }
 
+.p-playbar {
+    display: none;
+    position: relative;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--light-gray);
+    z-index: 5;
+}
 .main {
     flex: 5;
     background: linear-gradient(to bottom, #8eaba4, #000);
@@ -84,6 +94,7 @@ body {
 
 .functions {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -203,7 +214,7 @@ body {
 
 .row1-col2 {
     padding-bottom: 30px;
-
+    padding-right: 10px;
 }
 
 .row1-col2>h1 {
@@ -278,7 +289,6 @@ body {
 }
 
 .list-item {
-    box-sizing: unset;
     color: white;
     display: flex;
     align-items: center;
@@ -315,4 +325,88 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+
+@media screen and (max-width:768px) {
+    .row1-col2>h1 {
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: -1.8px;
+    }
+
+    .imgg {
+        width: 22vw;
+    }
+
+    .bar-time {
+        display: none;
+    }
+    
+    .fun {
+        padding: 20px;
+        background-color: var(--black);
+        border-radius: 10px;
+        border: 1px dotted var(--white);
+    }
+    .play {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .row1-col2>h1 {
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: -1.8px;
+    }
+    .row1-col2>p {
+        font-size: 12px;
+    }
+    .ro1-col1>img {
+        margin-top: 0px;
+    }
+    .sidebars{
+        display: none;
+    }
+    .p-playbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .playbar {
+        display: none;
+    }
+    .fun {
+        border: none;
+        background: none;
+        margin-left: 150px;
+    }
+    .list-item>p {
+        display: none;
+    }
+    #H2, #H3 {
+        display: none;
+    }
+    #H1 {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .name-all>f3 {
+        font-size: 14px;
+    }
+
+    .list-item {
+        font-size: 15px;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .main-logo {
+        height: 30px;
+    }
+
+    .li-col-4, .li-col-1 {
+        gap: 30px;
+    }
 }

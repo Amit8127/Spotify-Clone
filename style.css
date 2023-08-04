@@ -40,9 +40,24 @@ a {
     background-color: var(--black);
 }
 
+.p-sidebar {
+    display: none;
+}
+
 .playbar {
     position: relative;
     height: 13vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--light-gray);
+    z-index: 5;
+}
+
+.p-playbar {
+    display: none;
+    position: relative;
+    height: 8vh;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -83,6 +98,7 @@ a {
     font-weight: 700;
     line-height: 16px;
 }
+
 .icon:hover {
     background-color: rgb(26, 26, 26);
     border-radius: 5px;
@@ -95,6 +111,7 @@ a {
 }
 
 .navbar {
+    display: flex;
     cursor: not-allowed;
     position: fixed;
     top: 0px;
@@ -105,7 +122,7 @@ a {
     overflow-y: auto;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -136,6 +153,7 @@ a {
 
 .functions {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
 }
@@ -257,7 +275,7 @@ a {
     width: 25%;
     border-radius: 4px 0px 0px 4px;
     background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%);
-    
+
 }
 
 .main-card1:hover {
@@ -293,6 +311,7 @@ a {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .card2>img {
     width: 163px;
     margin-bottom: 20px;
@@ -308,4 +327,118 @@ a {
     color: #B3B3B3;
     font-size: 15px;
     font-weight: 500;
+}
+
+
+@media screen and (max-width:768px) {
+    .main-card1 {
+        width: 230px;
+    }
+
+    .trgl {
+        right: 164px;
+    }
+
+    .bar-time {
+        display: none;
+    }
+
+    .fun {
+        padding: 20px;
+        background-color: var(--black);
+        border-radius: 10px;
+        border: 1px dotted var(--white);
+    }
+
+    .play {
+        flex-direction: row;
+    }
+
+    .details {
+        gap: 0px;
+    }
+
+    .extra {
+        gap: 0px;
+    }
+    .trgl {
+        display:none !important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sidebars {
+        display: none;
+    }
+
+    .main {
+        flex: 1;
+    }
+
+    .navbar {
+        display: none !important;
+    }
+
+    .trgl {
+        display: none;
+    }
+
+    .extra {
+        display: none;
+    }
+
+    .cards {
+        justify-content: space-around;
+    }
+
+    .card2 {
+        width: 200px;
+    }
+
+    .playbar-foot {
+        display: none;
+    }
+
+    .playbar {
+        display: none;
+    }
+
+    .fun {
+        border: none;
+        background: none;
+        margin-left: 10vw;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .main-logo {
+        padding-left: 10px;
+        height: 30px;
+    }
+    .p-playbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .playbar {
+        display: none;
+    }
+    .fun {
+        border: none;
+        background: none;
+        margin-left: 150px;
+    }
+
+    .name-all>f3 {
+        font-size: 13px;
+        color: white;
+    }
+
+
+    .functions>img {
+        height: 30px;
+        margin: 10px;
+    }
+    
 }
