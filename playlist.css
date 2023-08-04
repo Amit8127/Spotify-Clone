@@ -361,7 +361,7 @@ body {
         letter-spacing: -1.8px;
     }
     .row1-col2>p {
-        font-size: 12px;
+        font-size: 10px;
     }
     .ro1-col1>img {
         margin-top: 0px;
@@ -379,7 +379,7 @@ body {
     .fun {
         border: none;
         background: none;
-        margin-left: 150px;
+        margin-left: 100px;
     }
     .list-item>p {
         display: none;

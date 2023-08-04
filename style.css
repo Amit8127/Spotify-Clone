@@ -427,11 +427,11 @@ a {
     .fun {
         border: none;
         background: none;
-        margin-left: 150px;
+        margin-left: 100px;
     }
 
     .name-all>f3 {
-        font-size: 13px;
+        font-size: 14px;
         color: white;
     }
 
