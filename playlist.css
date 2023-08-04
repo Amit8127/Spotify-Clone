@@ -356,12 +356,13 @@ body {
 
 @media screen and (max-width:480px) {
     .row1-col2>h1 {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 900;
         letter-spacing: -1.8px;
     }
     .row1-col2>p {
         font-size: 10px;
+        line-height: normal;
     }
     .ro1-col1>img {
         margin-top: 0px;
@@ -379,7 +380,7 @@ body {
     .fun {
         border: none;
         background: none;
-        margin-left: 100px;
+        margin-left: 75px;
     }
     .list-item>p {
         display: none;
